@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Carousel</title>
+	<style type="text/css">
+		.carouselbox{
+			font-family: helvetica, sans-serif;
+			font-size: 14px;
+			width: 100px;
+			position: relative;
+		}
+	</style>
+</head>
+<body>
+	<div class="carouselbox active">
+		<button class="prev"> ◀ </button>
+		<button class="next"> ▶ </button>
+		<ol class="content">
+			<li class="current"> 1 </li>
+			<li> 2 </li>
+			<li> 3 </li>
+			<li> 4 </li>
+		</ol>
+	</div>
+	<script type="text/javascript">
+		var prev = document.querySelector(".prev");
+		var next = document.querySelector(".next");
+		prev.addEventListener("click", function(value){
+			carousel(-1);
+		});
+		next.addEventListener("click",function(value){
+			carousel(1);
+		});
+
+		function carousel(direction) {
+
+		}
+	</script>
+</body>
+</html>
